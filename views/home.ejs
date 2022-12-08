@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200&display=swap" rel="stylesheet"> -->
+    <%- include('bootstrapcss') %>
+        <title>Home</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200&display=swap');
+            .top{
+                margin-left: 3rem;
+                margin-right: 3rem;
+            }
+            .cardd{
+                width: 70% !important;
+                padding: 1rem;
+                margin: auto;
+            }
+            a{
+                text-decoration: none;
+                /* font-size: 3vh; */
+                color: rgb(79, 63, 255);
+            }
+            a:hover{
+                color: brown;
+            }
+            .ch{
+                padding: 1rem;
+                font-size: 3vh;
+                background-color: rgb(102, 225, 200);
+            }
+            h6{
+                font-style: italic;
+                margin-top: 1rem; 
+                margin-bottom: 1rem;
+            }
+            .ctitle{
+                padding: 1rem;
+                margin-bottom: 1rem;
+                font-size: 4vh;
+            }
+        </style>
+</head>
+
+<body>
+    <!-- <h1>Logged in as:  </h1> -->
+
+    <%- include('header'); %>
+        <br>
+        <div class="d-flex flex-md-column top">
+
+            <!-- Listing all the doubts -->
+            <% doubts.forEach((doubt)=> { %>
+                <div class="card w-50 cardd">
+                    <div class="card-header ch">
+                        <a href="/r/<%= doubt.category %>" target="_blank" rel="noopener noreferrer">
+                          
+                            <%= (doubt.category) %>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h6>Asked By: <%= (doubt.author.username) %>
+                        </h6>
+                        <h5 class="card-title ctitle">
+                            <%= doubt.title %>
+                        </h5>
+                        <a href="/doubts/<%= doubt._id %>" class="">View more..</a>
+                    </div>
+                </div>
+                <br>
+                <% }); %>
+        </div>
+
+</body>
+
+</html>
