@@ -1,7 +1,6 @@
 const User = require("../models/userModel.js");
 const Doubt = require("../models/doubtModel.js");
 
-
 const getUserProfile = async (req, res) => {
     if (req.user) {
         const currentUser = req.user;

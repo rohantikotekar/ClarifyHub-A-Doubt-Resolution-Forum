@@ -7,10 +7,30 @@
     <%- include('bootstrapcss.ejs') %> 
     <title>Document</title>
 </head>
+<style>
+    img{
+        height: 300px;
+        width: 300px;
+    }
+   a{
+    text-decoration: none;
+   }
+   .card{
+    height: 70vh;
+    /* max-height: 63vh; */
+   }
+ 
+</style>
 <body>
     <div class="container">
-        <h6>Back to Home: <a href="/">Home</a> </h6>
-        <p> <%= errMessage %> </p>
+    <div class="px-3 py-3 card align-items-center">
+        <img src="https://media.istockphoto.com/id/1290154699/vector/comic-speech-bubble-with-text-oops-message-in-pop-art-style.jpg?s=612x612&w=0&k=20&c=4J-vEqvSWx-HEq8IiG5qP1WcM4Sf1xNsmXNInjMzWHY=" alt="">
+        <div class="justify-content-center">
+            <h6 >Back to Home: <a href="/">Home</a> </h6>
+        <span class=" px-3 py-3"></span>
+        <h3> <%= errMessage %> </h3>
+        </div>
     </div>
+</div>
 </body>
 </html>
