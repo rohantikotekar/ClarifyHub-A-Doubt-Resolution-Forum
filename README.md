@@ -1,5 +1,11 @@
 # qna-portal
-This is a question-answer portal created for college students to ask and answer questions about a gamut of college related topics such as coursework, college details, admission procedures, reviews etc.
+This is a question-and-answer portal created for college students to explore a gamut of topics related to college life, including coursework, college details, admission procedures, reviews, and more.
+
+
+
+
+
+
 
 
 
