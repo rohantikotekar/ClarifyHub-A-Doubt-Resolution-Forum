@@ -10,7 +10,7 @@ ClarifyHub is an intuitive web-based platform designed to facilitate the resolut
 - **Search Functionality:** Efficient search to find relevant questions and answers.
 - **Interactive GUI:** User-friendly and intuitive graphical interface for ease of navigation.
 
-  ## Description
+## Description
 - Developed a web-based platform using Node.js, Express.js, and MongoDB to facilitate academic doubt resolution.
 - Implemented features such as user authentication, question posting, community-driven answering, and search functionality.
 -  Utilized JWT for secure user authentication and employed a modular approach for efficient code management, resulting in a scalable and user-friendly application.
